@@ -1,0 +1,78 @@
+.pokemons{
+    display: grid;
+    /* esta dividindo metade a metade */
+    grid-template-columns: 1fr;
+   padding: 0px;
+   margin: 0px;
+   list-style: none;
+}
+
+.pokemon{
+    color: var(--CorNomesPokemons);
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    display: flex;
+}
+.pokwmon .name{
+    margin-bottom: .25rem;
+}
+.pokemon .number{
+    color: var(--CorNumero);
+    text-align: right;
+    font-size: var(--FontSizeDetalhes);
+}
+.pokemon .detalhes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.pokemon .detalhes .types{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.pokemon .detalhes .types .type{
+    
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: var(--FontSizeDetalhes);
+    border-radius: 1rem;
+
+}
+
+.pokemon .detalhes img{
+    max-width: 100%;
+    height: 70px;
+    align-self: flex-end;
+}
+.planta{
+    background-color: var(--BgColorTipoPlanta);
+}
+.planta .detalhes .types .type{
+    background-color:var(--BgDetalhesColorPlanta);
+}
+.fogo{
+    background-color: var(--BgColorTipoFogo);
+}
+.fogo .detalhes .types .type{
+    background-color:var(--BgDetalhesColorFogo);
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr ;
+    }
+  }
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
