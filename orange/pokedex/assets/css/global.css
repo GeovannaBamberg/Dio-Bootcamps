@@ -3,6 +3,8 @@
 :root{
     --fonteFamilyPrincipal: normal bold 1em 'Roboto', sans-serif;
     --FontSizeDetalhes: .625rem;
+    --BGcolorPrincipal:rgb(246, 248, 252);
+    --BGcolorConteiner: rgb(255, 255, 255);
     --CorTitulo:rgb(52, 50, 50);
     --CorNumero: rgba(52, 50, 50, 0.198);
     --CorNomesPokemons: rgb(255, 255, 255);
@@ -21,13 +23,13 @@
 body{
     font: var(--fonteFamilyPrincipal);
     margin: auto;
-    background-color: #F6F8FC;
+    background-color: var(--BGcolorPrincipal);
 }
 .container{
     height: 100vh;
     width: 100vw;
     padding: 1rem;
-    background-color: #fff;
+    background-color: var(--BGcolorConteiner);
 }
 
 @media screen and (min-width: 992px) {

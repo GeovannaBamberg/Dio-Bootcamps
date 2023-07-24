@@ -1,0 +1,50 @@
+requisição HTTP 
+
+URL: https://pokeapi.co/api/v2/pokemon
+    ${ip}/${path = caminho de identificação do recurso}
+
+    IP: https://pokeapi.co/
+    DNS CONVERTE O DOMINIO EM IP
+
+    path: api/v2/pokemon
+    o caminho do dominio
+
+Request Method: GET / POST / PUT / DELETE / PATCH /
+
+GET = PEGAR/BUSCAR 
+POST = INSERIR ALGO NOVO 
+PUT = ATUALIZAR 
+DELETE = EXCLUIR
+PATCH = ENCAMINHAR
+
+carrystring sempre vem depois do ponto de interrogação
+URL: https://pokeapi.co/api/v2/pokemon?type=grass&name=i  
+
+o que vem após a interrogação é uma busca no url, 
+e usa sitantese de busca de um where no js
+type=grass 
+name=i
+
+HEADER são metas que configuram o servidor, coisas que queremos
+
+accept: text/html,
+application/xhtml+xml,
+application/xml;q=0.9,
+image/avif,image/webp,
+image/apng,
+*/*;q=0.8,
+application/signed-exchange;
+v=b3;q=0.9
+
+accept fala que aceita os tais tipos de dados  a gente aceita receber
+
+Request Headers{
+Configuração
+accept-language: pt-BR,
+pt;q=0.9,
+en-US;q=0.8,
+en;q=0.7
+}
+
+Response Headers: 
+Configuração:
